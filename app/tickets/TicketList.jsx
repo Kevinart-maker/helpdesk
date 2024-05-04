@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 async function getTickets(){
-    const res = await fetch('http://localhost:4000/tickets', {
+    const res = await fetch('https://json-server-temp.vercel.app/tickets', {
         next: {
             revalidate: 0 // use 0 to opt out of using cache
         }
